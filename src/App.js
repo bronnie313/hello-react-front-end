@@ -1,6 +1,6 @@
-import React from "react";
-import { Route, Routes } from "react-router";
-import Greeting from "./components/Greeting";
+import React from 'react';
+import { Route, Routes } from 'react-router';
+import Greeting from './components/Greeting';
 
 function App() {
   return (

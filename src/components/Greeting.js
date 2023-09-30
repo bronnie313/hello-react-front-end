@@ -2,10 +2,9 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMessages } from '../features/message/messageSlice';
 
-const  Greeting = () => {
+const Greeting = () => {
   const { messages } = useSelector((state) => state.messages);
-  console.log(messages);
-  const dispatch = useDispatch(); 
+  const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchMessages());
@@ -16,7 +15,7 @@ const  Greeting = () => {
       <h1>Random Greeting:</h1>
       <p>{messages.greeting}</p>
     </div>
-  ); 
-}
+  );
+};
 
 export default Greeting;
